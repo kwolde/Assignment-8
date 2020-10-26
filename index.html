@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 08</title>
+    <script src="js/employee-management.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>The Employee Management Application</h1>
+        <div id="add_employee_form">
+            <h3>Add Employee</h3>
+            <form id="add_employee_form">
+                <table>
+                    <tr>
+                        <td><label for="name">Name:&nbsp;</label></td>
+                        <td><input type="text" id="name" name="name" value=""></td>
+                        <td class="err_msg" id="name_error">Please enter a name</td>
+                    </tr>
+                    <tr>
+                        <td><label for="title">Title:&nbsp;</label></td>
+                        <td><input type="text" id="title" name="title" value=""></td>
+                        <td class="err_msg" id="title_error">Please enter a title</td>
+                    </tr>
+                    <tr>
+                        <td><label for="ext">Extension:&nbsp;</label></td>
+                        <td><input type="text" id="ext" name="ext" value=""></td>
+                        <td class="err_msg" id="ext_error">Please enter a 4 digit extension</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Add" class="blue_btn"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <h4 id="employees_header"></h4>
+        <table id="employees_table">
+            <tbody id="employees">
+                <tr>
+                    <th>Name</th>
+                    <th>Title</th>
+                    <th>Extension</th>
+                    <th><button style="visibility:hidden">Delete</button></th>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
